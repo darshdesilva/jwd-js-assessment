@@ -93,7 +93,7 @@ console.log('correct');
         //highlight the li if it is the correct answer
         let li = `li_${index}_${i}`;
         let r = `radio_${index}_${i}`;
-        liElement = document.querySelector('#' + li);
+        listItm = document.querySelector('#' + li);
         radioElement = document.querySelector('#' + r);
 
         if (radioElement.checked) {
@@ -102,11 +102,11 @@ console.log('correct');
           if (quizItem.a == i) {
             //change background color of li element here
             score = score + 1;
-           liElement.style.backgroundColor="aqua";
+            listItm.style.backgroundColor="aqua";
           }
           else{
             
-            liElement.style.backgroundColor="red";
+            listItm.style.backgroundColor="red";
           }
          
         }
