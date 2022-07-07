@@ -122,6 +122,7 @@ console.log('correct');
   resetAll.onclick = location.reload();
   });
   
+  //timer
   let count = 30;
   var interval = setInterval(function(){
     document.getElementById('time').innerHTML=count;
